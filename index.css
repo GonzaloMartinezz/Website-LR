@@ -157,15 +157,18 @@ body{
 .social-icons a:hover i{
     transform: scale(1.2);
 }
+
 .container .logreg-box{
     position: absolute;
     top: 0;
     right: 0;
     width: calc(100% - 58%);
     height: 100%;
+    overflow: hidden;
 }
 
 .logreg-box .form-box{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,6 +180,28 @@ body{
     border-bottom-right-radius: 10px;
     color: #e4e4e4;
 }
+
+
+.logreg-box .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+    transition-delay: .7s;
+}
+.logreg-box.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+.logreg-box .form-box.register{
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+.logreg-box.active .form-box.register{
+    transform: translateX(0px);
+    transition-delay: .7s;
+}
+
+
 .form-box  h2{
     font-size: 32px;
     text-align: center;
