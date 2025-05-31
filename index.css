@@ -171,6 +171,7 @@ body{
 }
 
 .form-box .input-box {
+    position: relative;
     width: 340px;
     height: 50px;
     border-bottom: 2px solid #e4e4e4;
@@ -185,4 +186,18 @@ body{
     outline: none;
 }
 
-
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    font-size: 19px;
+    line-height: 57px;
+}
