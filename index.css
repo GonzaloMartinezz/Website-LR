@@ -197,10 +197,9 @@ body{
     transition-delay: 0s;
 }
 .logreg-box.active .form-box.register{
-    transform: translateX(0px);
+    transform: translateX(0);
     transition-delay: .7s;
-}
-
+} 
 
 .form-box  h2{
     font-size: 32px;
